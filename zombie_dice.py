@@ -7,31 +7,19 @@ try:
     qJogadores = int(input("Qual a quantidade de jogadores? "))
     if qJogadores >= 2 and qJogadores <= 98:
         print("Quantidade de jogadores atendida. Divirtam-se!")
-    elif qJogadores > 98:
-        print("Quantidade de jogadores excedeu!")
     else:
-        print("Você precisa de 2 jogadores ou mais!")
+        print("Quantidade de jogadores inválida!")
 except ValueError:
     print("Número inválido, tente novamente!")
 
 #Criando os dados
 
 #Dados verdes
-dado_verde1 = 'CPCTPC'
-dado_verde2 = 'CPCTPC'
-dado_verde3 = 'CPCTPC'
-dado_verde4 = 'CPCTPC'
-dado_verde5 = 'CPCTPC'
-dado_verde6 = 'CPCTPC'
+dado_verde = 'CPCTPC'
 #Dados amarelos
-dado_amarelo1 = 'TPCTPC'
-dado_amarelo2 = 'TPCTPC'
-dado_amarelo3 = 'TPCTPC'
-dado_amarelo4 = 'TPCTPC'
+dado_amarelo = 'TPCTPC'
 #Dados vermelhos
-dado_vermelho1 = 'TPTCPT'
-dado_vermelho2 = 'TPTCPT'
-dado_vermelho3 = 'TPTCPT'
+dado_vermelho = 'TPTCPT'
 
 #Sortear 3 dados
 sortear_dados = random.randint(1, 3)
